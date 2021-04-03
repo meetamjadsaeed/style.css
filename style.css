@@ -1,0 +1,902 @@
+/*!
+Theme Name: Cool_Baas
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cool_baas
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Cool_Baas is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	font-family: 'Lato', sans-serif; 
+}
+
+hr {
+    margin-top: 0rem !important; 
+    margin-bottom: 1rem !important;
+    border: 1px solid black;
+    /* border-top: 1px solid rgba(0,0,0,.1); */
+}
+
+
+
+
+
+/*************************HOME PAGE STYLES*****************/
+
+#logo{
+	width: 250px;
+	height: 100px;
+    margin-left: 49%;
+}
+
+.bg-image{
+	 width: auto; 
+	 height: 360px;
+
+}
+
+.rotate{
+  -ms-transform: rotate(357deg); /* IE 9 */
+  transform: rotate(357deg);
+  font-family: 'Indie Flower', cursive;
+	font-size: 36px;
+}
+.fullwidthUSPs{
+	background-color: #012E3A; 
+}
+.footer{
+	background-color: #7FA7B8;
+	position: relative;
+}
+
+.footer_image{
+float: right; 
+    /* margin-left: 90%; */
+    /* margin-top: -15px; */
+    position: absolute;
+    left: 370px;
+    top: -24%;
+}
+
+.mb-n5{
+	margin-bottom: -2.25rem !important;
+}
+
+.herotoptext{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.home_heosection_heading{
+
+font-family: 'Lato', sans-serif;
+	font-size: 48px;
+	margin-top: 21%;
+	font-weight: bold;
+
+}
+.testimonialdes::before {
+	 content: url('assets/img/“left.png');
+}
+
+.testimonialdes::after {
+	 content: url('assets/img/“right.png');
+}
+
+.wayofworkingcounter{
+font-family: 'Lato', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+.fullwidthUSPsfont{
+font-family: 'Lato', sans-serif;
+	font-size: 20px;	
+}
+
+.genericparagraph{
+font-family: 'Lato', sans-serif;
+	font-size: 18px;	
+	font-weight: 400;
+}
+
+
+.gotowork{
+font-family: 'Lato', sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+
+}
+
+.gotowork span{
+
+font-family: inherit;
+text-decoration: underline;
+text-decoration-color: red;
+
+}
+
+.seo{
+font-family: 'Lato', sans-serif;
+	font-size: 13px;	
+	font-weight: 400;
+}
+
+.footer_text{
+font-family: 'Lato', sans-serif;
+	font-size: 14px;	
+	font-weight: 400;
+}
+
+.fullwidthUSPstitle{
+margin-left: -40px;
+}
+
+
+
+/*************************HOME PAGE STYLES END*****************/
+
+
+
+
+/*************************OFFER PAGE STYLES*****************/
+
+
+.offerpage_hero_image{
+   position: relative; 
+}
+
+.offerpage_heroimage_form {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 42%;
+    bottom: -24%;
+}
+
+.offerpage_hero_form{
+	position: absolute;
+	margin-bottom: -50%;
+}
+.offerpage_header{
+	margin-top: 15%;
+}
+.offerpage_header_text{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;	
+	font-weight: 400;
+}
+
+.form-control{
+	font-family: 'Lato', sans-serif;
+	text-align: left; 
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #006E8D;
+	border-radius: 5px 5px 5px 5px;
+	width: 80%;
+}
+
+
+/*************************OFFER PAGE STYLES END*****************/
+
+
+/*************************ORDERINFO PAGE STYLES *****************/
+
+.orderpage_hero_imageform{
+
+width: auto; 
+}
+
+
+/*************************ORDERINFO PAGE STYLES END*****************/
+
+
+
+/*************************ORDERINFO PAGE STYLES *****************/
+
+.thankyoupage_hero_section{
+
+position: absolute;
+    /* top: 79%; */
+    bottom: -481px;
+position: absolute;
+}
+
+
+.
+
+
+/*************************ORDERINFO PAGE STYLES END*****************/
+
+
+
+/*************************GENERIC PAGE STYLES*****************/
+
+.Genericbg-image{
+	width: auto;
+	height: 464px;
+}
+
+.generic_heosection_heading{
+
+font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    margin-top: 10%;
+    font-weight: bold;
+    color: #006E8D;
+    text-shadow: 1px 1px #000000;
+}
+
+.generic_bulletsection{
+padding-left: 17%;
+padding-right: 17%;
+}
+
+.genericticklist ul{
+
+ list-style-image: url('assets/img/✓@2x.png');
+ line-height: 2.5;
+
+}
+
+.form-inline{
+	margin-left: 20%;
+}
+
+/*************************GENERIC PAGE STYLES END*****************/
+
+
+/*************************ARCHIVE PAGE STYLES *****************/
+
+#archive_horline1
+{
+
+border: 4px solid #f05e16;
+position: relative;
+
+}
+
+
+
+#archive_horline2
+{
+
+border: 4px solid #006E8D;
+    left: -3%;
+    position: absolute;
+    width: 100%;
+
+}
+
+.archive_heroimage{
+
+width: inherit;
+
+}
+
+
+.archive_border{
+
+position: relative;
+    z-index: 1;
+    width: 97%;
+    margin-left: 2%;
+
+
+}
+
+.archive_bordertop1{
+	border-top: 8px solid #f05e16;
+    left: 2%;
+    width: 4%;
+    position: absolute;
+    z-index: 2;
+}
+
+.archive_borderleft1{
+	border-left: 8px solid #f05e16;
+    left: 2%;
+    height: 15%;
+    position: absolute;
+}
+
+
+.archive_bordertop2{
+	border-top: 8px solid #f05e16;
+    right: 1%;
+    width: 4%;
+    position: absolute;
+    z-index: 2;
+}
+
+.archive_borderleft2{
+	border-right: 8px solid #f05e16;
+    right: 1%;
+    height: 15%;
+    position: absolute;
+    bottom: -0%;
+}
+
+
+
+.shape2{
+ text-align: left;
+    background-color: rgb(75 136 3 / 77%);
+    width: 76%;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    margin: 20px auto;
+    position: relative;
+    padding: 6px 0px 0px 31px;
+    margin-left: 0%;
+    z-index: 11;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px 8px 0px -1px #0d3818; 
+box-shadow: 0px 10px 13px -7px #000000, 1px 4px 0px -1px #0d3818;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+
+.shape2next{
+
+    width: 0;
+    height: 0;
+    border-top: 29px solid transparent;
+    border-left: 42px solid rgb(75 136 3 / 77%);
+    border-bottom: 34px solid transparent;
+    position: absolute;
+    left: 75%;
+    top: 8%;
+    z-index: 9;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+
+.shape2nextnext {
+    top: 9%;
+    width: 0;
+    height: 0;
+    border-top: 29px solid transparent;
+    border-left: 44px solid #0d3818;
+    border-bottom: 33px solid transparent;
+    position: absolute;
+    /* top: 7%; */
+    /* top: 6%; */
+    left: 75%;
+    z-index: 6;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+
+
+
+.shape3{
+ text-align: center;
+    background-color: #065b84;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    margin: 20px auto;
+    position: relative;
+    padding: 6px 0px 0px 31px;
+}
+
+
+.shape2rightpart{
+
+    width: 23%;
+    height: 28%;
+    position: absolute;
+    left: 75%;
+    top: 8%;
+    z-index: 5;
+
+}
+
+.archive_image {
+    /* margin-left: 39px; */
+    /* margin-right: 16%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.archive_footer{
+	background-color: #a8ada5;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.archive_footerheading{
+font-size: 38px;
+  font-weight: bolder;
+}
+
+/*************************AERCHIVE PAGE STYLES END*****************/
+
+
+
+
+
+
+
+/*************************BREAKPOINTS*****************/
+
+
+
+
+/* small devices (Mobile 375px)*/
+@media (max-width:  375px) { 
+
+
+
+/*************************HOME PAGE*****************/
+
+
+#logo {
+    width: 100%;
+    height: 100%;
+    margin:0%;
+    padding: 3% 2% 0% 2%;
+}
+
+
+.home_heosection_heading{
+    display: none;
+}
+
+
+.bg-image{
+
+    width: auto;
+}
+
+
+.fullwidthUSPstitle {
+    margin-left: 20%;
+}
+
+
+.testimonialdes{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 7%;
+
+}
+
+.genericparagraph{
+padding-left: 7%;
+
+}
+
+.testimonial img{
+padding-left: 7%;
+}
+
+
+
+.footer_image {
+    position: absolute;
+    left: 0%; */
+    top: 0%;
+}
+
+.wayofworkingcounter_image{
+    padding-left: 7%;
+}
+
+.wayofworkingcounter {
+    padding-left: 22%;
+    margin-top: -13%;
+}
+
+/*************************HOME PAGE END*****************/
+
+
+/*************************OFFER PAGE*****************/
+
+.offerpage_heroimage_form {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0%;
+    bottom: -12%;
+}
+
+.offerpage_hero_image{
+    display: none;
+}
+
+
+.form-control {
+    width: 223px;
+    height: 29px;
+}
+
+.btn{
+padding: 7px 22px 8px 27px;
+    margin-left: 31px;
+}
+/*************************OFFER PAGE END*****************/
+
+
+.post_tittle_shapenext {
+    left: 238px;
+    top: 26px;
+}
+
+.post_tittle_shapenextnext {
+    /* top: 7%; */
+    /* top: 6%; */
+    top: 28px;
+    left: 236px;
+}
+
+.post_tittle_shapeleft {
+    width: 15px;
+    
+    left: 23px;
+    top: 28px;
+}
+
+.post_tittle_shapeleft:before {
+        border-right: 26px solid rgb(215 219 222 / 70%);
+    right: 13px;
+    top: -1px;
+}
+
+.cntl-icon {
+    left: auto;
+    right: 16px;
+}
+
+.shape2next {
+    left: 276px;
+    top: 19px;
+}
+
+.shape2nextnext {
+    top: 23px;
+    left: 276px;
+}
+
+.archive_footerheading{
+    font-size: 16px;
+    padding-top: 5%;
+}
+
+.shape2rightpart {
+    width: 21%;
+    height: 17%;
+    top: 7%;
+}
+
+.footer_images{
+    width: auto;
+    height: auto;
+}
+
+.archive_footer {
+    width: auto;
+    padding: 38px;
+}
+
+
+.footer_images {
+    padding: 8%;
+}
+
+}
+
+
+/* Large devices (768px)*/
+@media (min-width: 376px) and (max-width: 768px){ 
+
+
+/*************************HOME PAGE*****************/
+.home_heosection_heading {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    margin-top: 52%;
+    /* font-weight: bold; */
+}
+
+.offerpage_hero_hiddenform{
+    display: none;
+}
+
+
+#logo {
+    margin-left: 50%;
+}
+
+
+.bg-image img{
+     width: auto; 
+     height: 336px;
+     margin-left: 17%;
+     
+}
+
+.fullwidthUSPstitle {
+    margin-left: 0px;
+}
+
+.genericparagraph {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.mb-n5 {
+    margin-bottom: -3.25rem !important;
+}
+.testimonialdes{
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;    
+    font-style: italic;
+}
+
+
+
+.testimonial
+{
+
+    padding: 0% 13% 0% 10%;
+}
+
+
+.footer_image {
+    /* float: right; */
+    position: absolute;
+    left: 222px;
+    top: -24%;
+}
+
+
+/*************************HOME PAGE END*****************/
+
+
+/*************************OFFER PAGE*****************/
+
+
+.offerpage_heroimage_form {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 23%;
+    bottom: -24%;
+}
+
+/*************************OFFER PAGE END*****************/
+
+
+/*************************GENERIC PAGE *****************/
+.generic_heosection_heading {
+    margin-left: -5%;
+}
+
+.Genericbg-image{
+    height: 368px;
+}
+
+
+/*************************GENERIC PAGE END*****************/
+
+
+/*************************ARCHIVE PAGE*****************/
+
+.post_tittle_shapenext {
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-left: 42px solid #006e8d;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    left: 253px;
+    top: 35px;
+    z-index: 10;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+
+.post_tittle_shapenextnext {
+    top: 38px;
+    width: 0;
+    height: 0;
+    border-top: 43px solid transparent;
+    border-left: 51px solid #0d3818;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    /* top: 7%; */
+    /* top: 6%; */
+    left: 253px;
+    z-index: 1;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.post_tittle_shapeleft {
+    text-align: right;
+    background-color: rgb(215 219 222 / 70%);
+    width: 30px;
+    height: 63px;
+    line-height: 60px;
+    color: white;
+    /* margin: 20px auto; */
+    position: absolute;
+    /* padding: 0px 0px 3px 0px; */
+    z-index: 10;
+    /* -webkit-box-shadow: 0px 10px 13px -7px #000000, 1px 8px 0px -1px #0d3818; */
+    /* box-shadow: 0px 10px 13px -7px #082831, 1px 8px 0px -1px #256475; */
+    left: 27px;
+    top: 35px;
+    border-radius: 5px 0px 5px 5px;
+}
+
+.post_tittle_shapeleft:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 28px solid rgb(215 219 222 / 70%);
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    right: 29px;
+    top: -1px;
+    z-index: 1;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.archive_footerheading{
+font-size: 28px;
+}
+
+
+/*************************ARCHIVE PAGE END*****************/
+
+
+
+}
+
+
+
+
+
+/* Medium devices (1024px)*/
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+
+
+/*************************HOME PAGE*****************/
+
+.offerpage_hero_hiddenform{
+display: none;
+}
+
+.footer_image {
+    /* float: right; */
+    position: absolute;
+    left: 91%;
+    top: -24%;
+}
+
+
+.bg-image {
+    /* width: auto; */
+    height: 360px;
+    /* width: max-content; */
+    width: 100%;
+}
+
+/*************************HOME PAGE END*****************/
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 1024px) { 
+.offerpage_hero_hiddenform{
+    display: none;
+}
+}
+
+
+
+
+/*************************BREAKPOINTS END*****************/
+
